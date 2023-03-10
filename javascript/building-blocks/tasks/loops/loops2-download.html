@@ -20,7 +20,7 @@
 
     <section class="preview">
 
-
+      
 
     </section>
 
@@ -41,6 +41,21 @@
     ]
 
     // Add your code here
+    para.textContent='';
+    for(const person of phonebook) {
+      if (person.name==='Mustafa') {
+      para.textContent= `${person.number}`;
+      break;
+      }
+      if (person.name==='')  {
+        para.textContent="person doesn't exist";
+      }
+    }
+
+    
+
+
+
 
     // Don't edit the code below here!
     const section = document.querySelector('section');

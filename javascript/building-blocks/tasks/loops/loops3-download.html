@@ -41,8 +41,17 @@
 
 
     // Add your code here
+    for(;i>=2;i--) {
+      if(isPrime(i)===false) continue;
+    
+        
+        para.textContent+=i+',';
+     }
 
+      //para.textContent=499 , 
+      //para.textContent=498 ,
 
+      
     // Don't edit the code below here!
     const section = document.querySelector('section');
     section.appendChild(para);
